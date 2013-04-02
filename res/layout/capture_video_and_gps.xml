@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    android:id="@+id/background_capture_video_and_gps"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="20dp"
+    android:gravity="center"
+    android:keepScreenOn="true" >
+
+    <FrameLayout
+        android:id="@+id/camera_preview_video_and_gps"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button_capture_video_and_gps" >
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/button_capture_video_and_gps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:text="@string/capture" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_video_and_gps"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/button_capture_video_and_gps"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/button_capture_video_and_gps"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:id="@+id/text_longitude_text_video_and_gps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_capture_video_and_gps"
+        android:layout_alignBottom="@+id/button_capture_video_and_gps"
+        android:layout_toRightOf="@+id/button_capture_video_and_gps"
+        android:text="@string/longitude" />
+
+    <TextView
+        android:id="@+id/text_latitude_text_video_and_gps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_longitude_text_video_and_gps"
+        android:layout_below="@+id/camera_preview_video_and_gps"
+        android:text="@string/latitude" />
+
+    <TextView
+        android:id="@+id/text_speed_value_video_and_gps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/button_capture_video_and_gps"
+        android:text="0.0 km/h" />
+
+    <TextView
+        android:id="@+id/text_latitude_value_video_and_gps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/progressBar_video_and_gps"
+        android:layout_marginLeft="42dp"
+        android:layout_toRightOf="@+id/text_longitude_text_video_and_gps"
+        android:text="0.00000" />
+
+    <TextView
+        android:id="@+id/text_longitude_value_video_and_gps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/text_longitude_text_video_and_gps"
+        android:layout_alignBottom="@+id/text_longitude_text_video_and_gps"
+        android:layout_alignLeft="@+id/text_latitude_value_video_and_gps"
+        android:text="0.00000" />
+
+</RelativeLayout>

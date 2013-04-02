@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="62dp"
+        android:onClick="startRecorder"
+        android:text="@string/start" />
+
+    <Button
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/start"
+        android:onClick="aboutLayout"
+        android:text="@string/about" />
+
+
+</RelativeLayout>
