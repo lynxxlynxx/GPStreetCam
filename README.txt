@@ -17,3 +17,6 @@ im Medienspeicher des Smartphones abgespeichert.
 
 Die genaue Funktion und Vorgehensweise der Applikation kann den Kommentaren im Quellcode
 entnommen werden.
+
+Die Installationsdatei 'GPStreetCam.apk' für Android-Smartphones befindet sich im Verzeichnis:
+Android APK
